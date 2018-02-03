@@ -37,7 +37,7 @@ public class kedua extends AppCompatActivity {
 
         if(jHarga > 65000){
             Context context = getApplicationContext();
-            Toast toast = Toast.makeText(context, "Jangan Makan Malam Di sini!! Uang Kamu Tidak Cukup", Toast.LENGTH_LONG);
+            Toast toast = Toast.makeText(context, "Jangan Makan Malam Di sini! Uang Kamu Tidak Cukup", Toast.LENGTH_LONG);
             toast.show();
 
         }else {
