@@ -1,11 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center_vertical"
+
+    android:orientation="vertical"
     tools:context="com.oji.ajinurlaksono_1202150032_modul1.kedua">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:textSize="@dimen/headSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Makan Malam"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="26dp"
+        android:layout_marginLeft="98dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+    <TextView
+        android:id="@+id/tTempat"
+        android:textSize="@dimen/normalSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_marginTop="13dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        android:layout_marginLeft="151dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:textSize="@dimen/head2Size"
+        android:layout_height="wrap_content"
+        android:text="Porsi"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@+id/tMenu"
+        android:layout_marginLeft="175dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
 
     <TextView
         android:id="@+id/tJumlah"
@@ -15,67 +47,33 @@
         android:layout_marginTop="20dp"
         android:gravity="center_vertical"
         android:text="2"
-        android:textColor="#000"
         android:textSize="@dimen/normalSize"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
-    <TextView
-        android:id="@+id/tTempat"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="151dp"
-        android:layout_marginTop="13dp"
-        android:text="TextView"
-        android:textColor="#000"
-        android:textSize="@dimen/normalSize"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
-
-    <TextView
-        android:id="@+id/tMenu"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="151dp"
-        android:layout_marginTop="20dp"
-        android:text="TextView"
-        android:textColor="#000"
-        android:textSize="@dimen/normalSize"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView7" />
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="98dp"
-        android:layout_marginTop="26dp"
-        android:text="Makan Malam"
-        android:textSize="@dimen/headSize"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="173dp"
-        android:layout_marginTop="39dp"
+        android:layout_marginTop="30dp"
         android:text="Menu"
         android:textSize="@dimen/head2Size"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tTempat" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/tMenu"
+        android:textSize="@dimen/normalSize"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="175dp"
-        android:layout_marginTop="32dp"
-        android:text="Porsi"
-        android:textSize="@dimen/head2Size"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tMenu" />
+        android:text="TextView"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        android:layout_marginLeft="151dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
 
     <TextView
         android:id="@+id/textView9"
@@ -92,11 +90,10 @@
         android:id="@+id/tHarga"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="161dp"
-        android:layout_marginTop="21dp"
         android:text="TextView"
-        android:textColor="#000"
         android:textSize="@dimen/normalSize"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView9" />
-</android.support.constraint.ConstraintLayout>
+        android:layout_marginTop="21dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        android:layout_marginLeft="161dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+</LinearLayout>

@@ -8,7 +8,7 @@ import android.widget.EditText;
 
 
 public class MainActivity extends AppCompatActivity {
-    String extra = "jumlah";
+    //String extra = "jumlah";
     EditText jum;
     EditText menu;
     @Override
