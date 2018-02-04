@@ -17,31 +17,31 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void eatbus(View view) {
-        Intent intent  = new Intent(this, kedua.class);
-        jum = (EditText) findViewById(R.id.jumlah);
-        String jumlah = jum.getText().toString();
-        menu = (EditText) findViewById(R.id.makan);
-        String makan = menu.getText().toString();
-        intent.putExtra("tempat","Eatbus");
-        intent.putExtra("menu",makan);
-        intent.putExtra("jumlah",jumlah);
-        intent.putExtra("harga","50000");
-        startActivity(intent);
+    public void eatbus(View view) {  //method untuk menjalankan tombol Eatbuss
+        Intent intent  = new Intent(this, kedua.class); //intent menuju class kedua
+        jum = (EditText) findViewById(R.id.jumlah);  //inisiasi attribute
+        String jumlah = jum.getText().toString(); //menampung attribute pada string
+        menu = (EditText) findViewById(R.id.makan); //inisiasi attribute
+        String makan = menu.getText().toString(); //menampung attribute pada string
+        intent.putExtra("tempat","Eatbus"); //memberikan informasi tambahan untuk data yang akan di oper ke aktivitas lain
+        intent.putExtra("menu",makan); //memberikan informasi tambahan untuk data yang akan di oper ke aktivitas lain
+        intent.putExtra("jumlah",jumlah); //memberikan informasi tambahan untuk data yang akan di oper ke aktivitas lain
+        intent.putExtra("harga","50000"); //memberikan informasi tambahan untuk data yang akan di oper ke aktivitas lain
+        startActivity(intent); // start activity dengan parameter intent yang sudah diinisiasi sebelumnya
 
     }
 
-    public void abnormal(View view) {
-        Intent intent  = new Intent(this, kedua.class);
-        jum = (EditText) findViewById(R.id.jumlah);
-        String jumlah = jum.getText().toString();
-        menu = (EditText) findViewById(R.id.makan);
-        String makan = menu.getText().toString();
-        intent.putExtra("tempat","Abnormal");
-        intent.putExtra("menu",makan);
-        intent.putExtra("jumlah",jumlah);
-        intent.putExtra("harga","30000");
-        startActivity(intent);
+    public void abnormal(View view) { //method untuk menjalankan tombol Abnormal
+        Intent intent  = new Intent(this, kedua.class); //intent menuju class kedua
+        jum = (EditText) findViewById(R.id.jumlah); //inisiasi attribute
+        String jumlah = jum.getText().toString(); //menampung attribute pada string
+        menu = (EditText) findViewById(R.id.makan); //inisiasi attribute
+        String makan = menu.getText().toString(); //menampung attribute pada string
+        intent.putExtra("tempat","Abnormal"); //memberikan informasi tambahan untuk data yang akan di oper ke aktivitas lain
+        intent.putExtra("menu",makan); //memberikan informasi tambahan untuk data yang akan di oper ke aktivitas lain
+        intent.putExtra("jumlah",jumlah); //memberikan informasi tambahan untuk data yang akan di oper ke aktivitas lain
+        intent.putExtra("harga","30000"); //memberikan informasi tambahan untuk data yang akan di oper ke aktivitas lain
+        startActivity(intent); // start activity dengan parameter intent yang sudah diinisiasi sebelumnya
 
     }
 }

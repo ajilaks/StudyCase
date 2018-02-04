@@ -17,28 +17,28 @@ public class kedua extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kedua);
-        Intent intent =getIntent();
-        String pJumlah = intent.getStringExtra("jumlah");
-        String pTempat = intent.getStringExtra("tempat");
-        String pMenu = intent.getStringExtra("menu");
-        String pHarga = intent.getStringExtra("harga");
-        int jHarga = Integer.valueOf(pHarga)*Integer.valueOf(pJumlah);
+        Intent intent =getIntent(); // inisasi intent yang akan menerima informasi dari class sebelumnya dan menampung ke variable
+        String pJumlah = intent.getStringExtra("jumlah"); //menangkap informasi tambahan yang dikirimkan class sebelumnya dan menampung ke variable
+        String pTempat = intent.getStringExtra("tempat"); //menangkap informasi tambahan yang dikirimkan class sebelumnya dan menampung ke variable
+        String pMenu = intent.getStringExtra("menu"); //menangkap informasi tambahan yang dikirimkan class sebelumnya dan menampung ke variable
+        String pHarga = intent.getStringExtra("harga"); //menangkap informasi tambahan yang dikirimkan class sebelumnya dan menampung ke variable
+        int jHarga = Integer.valueOf(pHarga)*Integer.valueOf(pJumlah); //menghintung jumlah harga, yaitu harga satuan dikali jumlah porsi
 
 
-        jumlah = (TextView) findViewById(R.id.tJumlah);
-        jumlah.setText(pJumlah);
-        tempat = (TextView) findViewById(R.id.tTempat);
-        tempat.setText(pTempat);
-         menu = (TextView) findViewById(R.id.tMenu);
-        menu.setText(pMenu);
+        jumlah = (TextView) findViewById(R.id.tJumlah); //inisiasi attribute
+        jumlah.setText(pJumlah); //set Tampilan TextView sesuai attribute
+        tempat = (TextView) findViewById(R.id.tTempat); //inisiasi attribute
+        tempat.setText(pTempat); //set Tampilan TextView sesuai attribute
+         menu = (TextView) findViewById(R.id.tMenu); //inisiasi attribute
+        menu.setText(pMenu); //set Tampilan TextView sesuai attribute
 //String h = String.va
-        harga = (TextView) findViewById(R.id.tHarga);
-        harga.setText(String.valueOf(jHarga));
+        harga = (TextView) findViewById(R.id.tHarga); //inisiasi attribute
+        harga.setText(String.valueOf(jHarga)); //set Tampilan TextView sesuai attribute
 
-        if(jHarga > 65000){
+        if(jHarga > 65000){ //perkondisian dimana jumlah harga lebih besar dari 650000
             Context context = getApplicationContext();
-            Toast toast = Toast.makeText(context, "Jangan Makan Malam Di sini! Uang Kamu Tidak Cukup", Toast.LENGTH_LONG);
-            toast.show();
+            Toast toast = Toast.makeText(context, "Jangan Makan Malam Di sini! Uang Kamu Tidak Cukup", Toast.LENGTH_LONG); //memberi pesan yang ditampilkan pada toast
+            toast.show(); //menampilkan toast
 
         }else {
             Context context = getApplicationContext();
